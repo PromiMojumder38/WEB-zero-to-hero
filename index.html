@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <h1>Travel Reservation Form</h1>
-        <h3>* denotes mandatory</h3>
-        <form>
-            <label style="font-weight: bold;">Full name*:</label><br>
-            <input type="text" placeholder="FirstName LastName"><br>
-            <label style="font-weight: bold;">Email address*:</label><br>
-            <input type="email" placeholder="EMAIL ADDRESS"><br>
-            <label style="font-weight: bold;">Select Tour Package*:</label><br>
-            <select name="selected_option" required>
-                <option>Goa</option>
-                <option>Ladakh</option>
-                <option>Paris</option>
-            </select>
-            <br>
-            <label style="font-weight: bold;">Arrival date*:</label><br>
-            <input type="text" placeholder="m/d/y"><br>
-            <label>Number of persons*:</label><br>
-            <input type="text" placeholder="UNKNOWN_TYPE"><br>
-            <label style="font-weight: bold;">What would you want to avail?*</label><br>
-            <label style="font-weight: bold;">Boarding</label>
-            <input type = "checkbox"><br>
-            <label style="font-weight: bold;">Fooding</label>
-            <input type = "checkbox"><br>
-            <label style="font-weight: bold;">Sight seeing</label>
-            <input type = "checkbox"><br>
-            <label style="font-weight: bold;">Discount Coupon code:*:</label><br>
-            <input type="text" placeholder="UNKNOWN_TYPE"><br>
-            <label style="font-weight: bold;">Terms and conditions*</label><br>
-            <input type = "radio">
-            <label style="font-weight: bold;">I agree </label>
-            <input type = "radio">
-            <label style="font-weight: bold;">I disagree </label>
-            <br>
-            <button type = "submit" style="font-weight: bold;">Complete reservation</button>
-          </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Travel Reservation Form</h1>
+    <h3>* denotes mandatory</h3>
+    <form>
+        <label> Full name*: </label><br>
+        <input type="text" placeholder="FirstName LastName"><br>
+
+        <label> Email address*: </label><br>
+        <input type="email" placeholder="EMAIL ADDRESS"><br>
+
+        <label> Select Tour Package*: </label><br>
+        <select name="selected_option" required>
+            <option value = "goa">Goa</option>
+            <option value="ladakh">Ladakh</option>
+            <option value="paris">Paris</option>
+        </select><br>
+
+        <label> Arrival date*: </label><br>
+        <input type="text" placeholder="m/d/y"><br>
+
+        <label> Number of persons*: </label><br>
+        <input type="text" placeholder="UNKNOWN_TYPE"><br>
+
+        <label> What would you want to avail?* </label><br> 
+        <label> Boarding </label><input type = "checkbox" value="boarding"><br> 
+        <label> Fooding </label><input type = "checkbox" value="fooding"><br>  
+        <label> Sight seeing </label><input type = "checkbox" value="sightseeing"><br> 
+
+        <label> Discount Coupon code*: </label><br> 
+        <input type="text" name="coupon_code" placeholder="UNKNOWN_TYPE"><br>
+        
+        <label> Terms and conditions* </label><br> 
+        <input type="radio" name="terms" value="agree"> <label>I agree</label>
+        <input type="radio" name="terms" value="disagree"> <label>I disagree</label><br>            
+        
+        <button type = "submit" > Complete reservation </button>
+      </form>
+</body>
 </html>
