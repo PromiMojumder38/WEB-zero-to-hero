@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rectangle1{
+    width: 300px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.rectangle2{
+    width: 140px;
+    height: 125px;
+    background-color: skyblue;
+}
